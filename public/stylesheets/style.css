@@ -121,23 +121,30 @@ header {
   min-height: 100%;
   height: 100%;
   margin: 0 auto -40px;
+  padding: 30px;
 }
 #wrapper:after {
   content: '';
   display: block;
   height: 40px;
 }
+.row {
+  max-width: 90% !important;
+}
 .album {
   display: block;
   text-align: center;
+  width: 100%;
+  overflow: visible;
 }
 .album .artwork {
-  width: 400px;
-  height: 400px;
+  width: 100%;
   display: inline-block;
-  margin-top: 20px;
-  background-image: url("/images/fly-society.svg");
-  background-repeat: no-repeat;
+  margin: 20px 0px 20px 0px;
+}
+.album .artwork img {
+  width: 100%;
+  height: 100%;
 }
 .tracklist {
   margin-left: 10px;
@@ -145,8 +152,8 @@ header {
   text-transform: uppercase;
 }
 .tracklist .song {
-  margin-top: 20px;
   display: block;
+  margin-bottom: 20px;
 }
 .tracklist .name {
   font-weight: 700;
@@ -154,6 +161,7 @@ header {
   color: #05273a;
   display: block;
   float: left;
+  margin-top: 10px;
 }
 .tracklist .featuring {
   font-size: 14px;
@@ -167,7 +175,6 @@ header {
   float: left;
 }
 .tracklist .track {
-  margin-top: 10px;
   float: left;
   width: 100%;
 }
@@ -181,6 +188,7 @@ header {
   font-weight: 700;
   font-size: 14px;
   width: 100%;
+  margin-top: 0px;
 }
 .song-details .producer {
   font-weight: 400;
@@ -199,6 +207,8 @@ header {
   color: #eab82a;
 }
 .download {
+  font-size: 20px;
+  margin-top: 20px;
   border: 1px solid #05273a;
   background: transparent;
   padding: 20px;
@@ -210,12 +220,65 @@ header {
   color: #05273a;
   font-family: 'Droid Sans', sans-serif;
   font-weight: 400;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.download:hover {
+  background: #05273a;
+  color: #f04c3d;
 }
 .audio {
-  margin-top: 20px;
+  display: block;
+  margin-top: 40px;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  float: left;
+}
+.data {
+  float: left;
+}
+.artist-name,
+.artist-city {
+  color: #05273a;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+}
+.artist-name {
+  font-weight: 700;
+  font-size: 30px;
+}
+.personal {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #05273a;
+}
+.bio {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #05273a;
+}
+.bio a {
+  text-decoration: underline;
+}
+.bio a:hover {
+  color: #eab82a;
+}
+.bio p {
+  margin-bottom: 15px;
 }
 footer {
   width: 100%;
   height: 40px;
   background: #05273a;
+  position: fixed;
 }

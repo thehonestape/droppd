@@ -41,38 +41,43 @@ header
   min-height 100%
   height 100%
   margin 0 auto -40px
+  padding 30px
   &:after
     content ''
     display block
     height 40px
+.row
+  max-width 90% !important
 
 .album
   display block
   text-align center
+  width 100%      
+  overflow visible
+
+
   .artwork  
-    display 
-    width 400px
-    height 400px
+    width 100%    
     display inline-block
-    margin-top 20px
-    background-image url('/images/fly-society.svg')
-    background-repeat no-repeat
-    background-size 100%    
-      img
-        100%
+    margin 20px 0px 20px 0px
+    img
+      width 100%
+      height 100%
+
 .tracklist
     margin-left 10px
     font-family 'Droid Sans', sans-serif
     text-transform uppercase
     .song 
-      margin-top 20px
       display block
+      margin-bottom 20px
     .name 
       font-weight 700
       font-size 30px
       color dark
       display block
       float left
+      margin-top 10px
     .featuring
       font-size 14px
       color white
@@ -83,7 +88,6 @@ header
       font-size 50px
       float left
     .track
-      margin-top 10px
       float left
       width 100%
 .song-details
@@ -95,6 +99,7 @@ header
          font-weight 700
          font-size 14px
          width 100%
+         margin-top 0px
       .producer
           font-weight 400
           width 100%
@@ -105,6 +110,8 @@ header
         &:hover
           color yellow
 .download
+  font-size 20px
+  margin-top 20px
   border 1px solid dark
   background transparent
   padding 20px
@@ -115,14 +122,52 @@ header
   color dark    
   font-family 'Droid Sans', sans-serif
   font-weight 400
-
+  transition all .25s ease
+  &:hover
+    background dark
+    color red
 
 .audio
-  margin-top 20px
+  display block
+  margin-top 40px
+.avatar
+  width 200px
+  height 200px
+  border-radius 100px
+  overflow hidden
+  float left
+.data
+  float left
+.artist-name
+.artist-city
+  color dark
+  font-size 20px
+  display block
+  width 100%
+.artist-name
+  font-weight 700
+  font-size 30px
+.personal
+  margin-top 40px
+  padding-top 20px
+  border-top 1px solid dark
+.bio
+  font-size 16px
+  font-weight 400
+  line-height 25px
+  color dark
+  a
+    text-decoration underline
+    &:hover
+      color yellow
+
+  p 
+    margin-bottom 15px
 
 footer
   width 100%
   height 40px
   background #05273A
+  position fixed
 
 

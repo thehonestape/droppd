@@ -16,59 +16,69 @@ html
 
   body
     #wrapper 
-      .large-3.columns.tracklist
-        .song
-          .name Jettin
-          .track
-            .track-number 01
-            .song-details
-              .name Fly Mixtape Version
-              .producer "Dink" produced by Dj Premier
-          .track 
-            .track-number 02
-            .song-details
-              .name Chop Steak Remix
-              .producer Produced by 
-                a(href='http://www.twitter.com/chopsteak') Chop Steak
-          .track 
-            .track-number 03
-            .song-details
-              .name Haris Qureshi Remix
-              .producer Produced by 
-                a(href='http://lnscrew.bandcamp.com/') Haris Qureshi
-        .song 
-          .name Fly Society
-            .featuring Featuring 20/20 and Rad
+      .row
+        .large-6.columns
+          .album
+            .artwork
+              img(src='/images/fly-society.svg')
+
+        .large-5.columns.tracklist
+          .song
+            .name Jettin
             .track
-              .track-number 04
+              .track-number 01
               .song-details
                 .name Fly Mixtape Version
-                .producer "Tickets for 2" produced by Ski Beatz 
+                .producer "Dink" produced by Dj Premier
             .track 
-              .track-number 05
-              .song-details
-                .name Soul 20/20 Remix
-                .producer Produced by 
-                  a(href='https://soundcloud.com/ikeaka2020') 20/20
-            .track 
-              .track-number 06
+              .track-number 02
               .song-details
                 .name Chop Steak Remix
                 .producer Produced by 
                   a(href='http://www.twitter.com/chopsteak') Chop Steak
-        
-      .large-6.columns
-        .album
-          .artwork
+            .track 
+              .track-number 03
+              .song-details
+                .name Haris Qureshi Remix
+                .producer Produced by 
+                  a(href='http://lnscrew.bandcamp.com/') Haris Qureshi
+          .song 
+            .name Fly Society
+              .featuring Featuring 20/20 and Rad
+              .track
+                .track-number 04
+                .song-details
+                  .name Fly Mixtape Version
+                  .producer "Tickets for 2" produced by Ski Beatz 
+              .track 
+                .track-number 05
+                .song-details
+                  .name Soul 20/20 Remix
+                  .producer Produced by 
+                    a(href='https://soundcloud.com/ikeaka2020') 20/20
+              .track 
+                .track-number 06
+                .song-details
+                  .name Chop Steak Remix
+                  .producer Produced by 
+                    a(href='http://www.twitter.com/chopsteak') Chop Steak
+                iframe(width="100%",height="166",scrolling="no",frameborder="no",src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F100639901&amp;color=f04c3d&amp;auto_play=false&amp;show_artwork=true")
+                button.download Download
+      .row
+        .personal
+          .large-4.columns.links
+            .avatar 
+              img(src='/images/winslowtop.jpg')
+            .data
+              .artist-name Mic Flo
+              .artist-city Texas
+          .large-8.columns.bio
+            p Dr. Michael Lloyd Richardson, M.D., commonly known as Fleezy Fleez, Mic Flo, Nigel Black, Fleezy, and Mike (of Mike and Ike), releases his solo debut project that contains, arguably, his greatest and most intense music of all time: F.L.Y. (Forgetting Lost Youth)
+            p Mike is best known for his deep vocals and impeccable rhyme schemes as a founding member of the duo Mike and Ike while he studied the art of medicine in Austin, Texas. Described as a perfect blend of funk, jazz, and hip hop, the duo cultivated a new sound unique to the rap world. Their album, Introducing, earned a number of accolades, awards, and a large fan base, in Texas and beyond.  Their music video, Classic Sound, and their collaborative video with Hero & Rad, Smoothness, Coolness, continue to accumulate YouTube hits and positive feedback years after their release. 
+            p Michael Richardson boasts a long repertoire of live performances across the nation, numerous group and solo projects, guest appearances, and special awards.  His most cherished claim to fame is “Mike and Ike” day as proclaimed by Austin’s mayor, Will Wynn, June 5 of every year.
+            p Now, Richardson grows up in the first mixtape of his upcoming trilogy.  Michael exquisitely develops rhymes ranging from young, comedic arrogance to the mature, introspective uncertainty of independence.  Having visited Russia, Haiti, Israel, Palestine, Malawi, United Arab Emirates, Canada and Mexico within a 1 year timespan, Mike was both inspired and transformed along his journeys. In this project, F.L.Y. (Forgetting Lost Youth), he explores controversial global issues as he searches to find himself and his calling.  However, as serious as the topics become Mike never fails to maintain his sense of humor and wit.  He consequently wins people of all cultures over with his charm and humility in a project that will excite people of all walks of life.  
 
-      .large-2.columns
-        button.download Download
-      .large-4.small-centered.columns
-        .audio
-          <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F100639901&amp;color=f04c3d&amp;auto_play=false&amp;show_artwork=true"></iframe>
-
-
-  footer
-    ul.logos
-      li 
-        img(src='/images/')
+    footer
+      ul.logos
+        li 
+          img(src='/images/')
