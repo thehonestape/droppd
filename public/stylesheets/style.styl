@@ -18,50 +18,111 @@ global-reset()
  * background color as variables
  */
 main-color = #fa5b4d
-background-color = #faf9f0
+background-color = #F04C3D
+red = #F04C3D
+dark = #05273A
+yellow = #EAB82A
 
 body
-  font-family 'Georgia'
-  background-color background-color
-  color #444
+html
+  background red
+  color #fff
+  height 100%
+  font-family 'Droid Sans', sans-serif
+
 
 header
-  font-family 'Quicksand'
   padding 50px 10px
   color #fff
   font-size 25px
   text-align center
+#wrapper
+  background red
+  min-height 100%
+  height 100%
+  margin 0 auto -40px
+  &:after
+    content ''
+    display block
+    height 40px
 
-  /*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
-  background-color main-color
-  border-bottom 1px solid darken(main-color, 30%)
-  text-shadow 0px -1px 0px darken(main-color, 30%)
-
-.container
-  width 500px
-  margin 50px auto
-  overflow hidden
-
-.main-content
+.album
+  display block
+  text-align center
+  .artwork  
+    display 
+    width 400px
+    height 400px
+    display inline-block
+    margin-top 20px
+    background-image url('/images/fly-society.svg')
+    background-repeat no-repeat
+    background-size 100%    
+      img
+        100%
+.tracklist
+    margin-left 10px
+    font-family 'Droid Sans', sans-serif
+    text-transform uppercase
+    .song 
+      margin-top 20px
+      display block
+    .name 
+      font-weight 700
+      font-size 30px
+      color dark
+      display block
+      float left
+    .featuring
+      font-size 14px
+      color white
+    .track-number
+      color yellow
+      display inline-block
+      font-weight 700
+      font-size 50px
+      float left
+    .track
+      margin-top 10px
+      float left
+      width 100%
+.song-details
+      float left
+      font-size 12px
+      color dark
+      margin-top 10px
+      .name
+         font-weight 700
+         font-size 14px
+         width 100%
+      .producer
+          font-weight 400
+          width 100%
+      a
+        color dark
+        text-decoration none
+        transition all .25s ease
+        &:hover
+          color yellow
+.download
+  border 1px solid dark
+  background transparent
+  padding 20px
+  width 100%
+  border-radius 5px
+  text-transform uppercase
   float left
-  width 300px
+  color dark    
+  font-family 'Droid Sans', sans-serif
+  font-weight 400
 
-  p
-    margin-bottom 20px
 
-.sidebar
-  float left
-  width 200px
-
+.audio
+  margin-top 20px
 
 footer
-  width 500px
-  margin 50px auto
-  border-top 1px dotted #ccc
-  padding-top 5px
-  font-size 13px
+  width 100%
+  height 40px
+  background #05273A
 
 

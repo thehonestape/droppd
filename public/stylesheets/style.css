@@ -103,45 +103,119 @@ a img {
  * Store the main color and
  * background color as variables
  */
-body {
-  font-family: 'Georgia';
-  background-color: #faf9f0;
-  color: #444;
+body,
+html {
+  background: #f04c3d;
+  color: #fff;
+  height: 100%;
+  font-family: 'Droid Sans', sans-serif;
 }
 header {
-  font-family: 'Quicksand';
   padding: 50px 10px;
   color: #fff;
   font-size: 25px;
   text-align: center;
-/*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
-  background-color: #fa5b4d;
-  border-bottom: 1px solid #df1806;
-  text-shadow: 0px -1px 0px #df1806;
 }
-.container {
-  width: 500px;
-  margin: 50px auto;
-  overflow: hidden;
+#wrapper {
+  background: #f04c3d;
+  min-height: 100%;
+  height: 100%;
+  margin: 0 auto -40px;
 }
-.main-content {
+#wrapper:after {
+  content: '';
+  display: block;
+  height: 40px;
+}
+.album {
+  display: block;
+  text-align: center;
+}
+.album .artwork {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin-top: 20px;
+  background-image: url("/images/fly-society.svg");
+  background-repeat: no-repeat;
+}
+.tracklist {
+  margin-left: 10px;
+  font-family: 'Droid Sans', sans-serif;
+  text-transform: uppercase;
+}
+.tracklist .song {
+  margin-top: 20px;
+  display: block;
+}
+.tracklist .name {
+  font-weight: 700;
+  font-size: 30px;
+  color: #05273a;
+  display: block;
   float: left;
-  width: 300px;
 }
-.main-content p {
-  margin-bottom: 20px;
+.tracklist .featuring {
+  font-size: 14px;
+  color: #fff;
 }
-.sidebar {
+.tracklist .track-number {
+  color: #eab82a;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 50px;
   float: left;
-  width: 200px;
+}
+.tracklist .track {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+.song-details {
+  float: left;
+  font-size: 12px;
+  color: #05273a;
+  margin-top: 10px;
+}
+.song-details .name {
+  font-weight: 700;
+  font-size: 14px;
+  width: 100%;
+}
+.song-details .producer {
+  font-weight: 400;
+  width: 100%;
+}
+.song-details a {
+  color: #05273a;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.song-details a:hover {
+  color: #eab82a;
+}
+.download {
+  border: 1px solid #05273a;
+  background: transparent;
+  padding: 20px;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  float: left;
+  color: #05273a;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+}
+.audio {
+  margin-top: 20px;
 }
 footer {
-  width: 500px;
-  margin: 50px auto;
-  border-top: 1px dotted #ccc;
-  padding-top: 5px;
-  font-size: 13px;
+  width: 100%;
+  height: 40px;
+  background: #05273a;
 }
