@@ -26,5 +26,6 @@ app.get('/', function (req, res) {
   { title : 'Home' }
   )
 })
-var port = process.env.PORT || 3000;
-app.listen(port, function() {
+.listen(process.env.PORT || 5000)
+
+  
