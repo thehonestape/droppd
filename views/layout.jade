@@ -3,16 +3,24 @@ html
   head
     title Fleezus Christ Superstar
     link(rel='stylesheet', href='/stylesheets/normalize.css')
-    link(rel='stylesheet', href='/stylesheets/foundation.min.css')
+    link(rel='stylesheet', href='/stylesheets/foundation.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/360player.css')
+    link(rel='stylesheet', href='/stylesheets/360player-visualization.css')
+ 
+  
     link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
 
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script(type='text/javascript', src='/js/foundation.js')
-    script(type='text/javascript', src='/js/zepto.js')
     script(src='//connect.soundcloud.com/sdk.js')
+    script(type='text/javascript', src='/js/soundmanager2.js') 
     script(type='text/javascript', src='/js/what.js')
+    script(type='text/javascript', src='/js/berniecode-animator.js')
+    script(type='text/javascript', src='/js/360player.js')
+    script(type='text/javascript', src='/js/excanvas.js')
 
+    meta(name="viewport",content="width=device-width, initial-scale=1")
 
   body
     #wrapper 
@@ -21,6 +29,10 @@ html
           .album
             .artwork
               img(src='/images/fly-society.svg')
+          .coming-soon.show-for-medium-up
+            .small-artwork 
+              img(src='images/fly.png')      
+            .title Forgetting Lost Youth, Coming 2013  
 
         .large-5.small-12.columns.tracklist
           div(id='soundcloud-player')
@@ -30,7 +42,7 @@ html
               .track-number 01
               .song-details
                 .name Fly Mixtape Version
-                .producer "Dink" produced by Dj Premier
+                .producer "Dink" by Dj Premier
             .track 
               .track-number 02
               .song-details
@@ -50,7 +62,7 @@ html
                 .track-number 04
                 .song-details
                   .name Fly Mixtape Version
-                  .producer "Tickets for 2" produced by Ski Beatz 
+                  .producer "Tickets for 2" by Ski Beatz 
               .track 
                 .track-number 05
                 .song-details
@@ -90,7 +102,12 @@ html
             p Michael Richardson boasts a long repertoire of live performances across the nation, numerous group and solo projects, guest appearances, and special awards.  His most cherished claim to fame is “Mike and Ike” day as proclaimed by Austin’s mayor, Will Wynn, June 5 of every year.
             p Now, Richardson grows up in the first mixtape of his upcoming trilogy.  Michael exquisitely develops rhymes ranging from young, comedic arrogance to the mature, introspective uncertainty of independence.  Having visited Russia, Haiti, Israel, Palestine, Malawi, United Arab Emirates, Canada and Mexico within a 1 year timespan, Mike was both inspired and transformed along his journeys. In this project, F.L.Y. (Forgetting Lost Youth), he explores controversial global issues as he searches to find himself and his calling.  However, as serious as the topics become Mike never fails to maintain his sense of humor and wit.  He consequently wins people of all cultures over with his charm and humility in a project that will excite people of all walks of life.  
 
-    footer
-      ul.logos
-        li 
-          img(src='/images/')
+footer
+
+  //-.logos
+    ul
+      li    
+        img(src='/images/tha-logo.svg')    
+      li   
+        img(src='/images/cs-logo.svg')
+
