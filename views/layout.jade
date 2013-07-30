@@ -14,11 +14,11 @@ html
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script(type='text/javascript', src='/js/foundation.js')
     script(src='//connect.soundcloud.com/sdk.js')
+    script(src='https://w.soundcloud.com/player/api.js')
     script(type='text/javascript', src='/js/soundmanager2.js') 
     script(type='text/javascript', src='/js/what.js')
-    script(type='text/javascript', src='/js/berniecode-animator.js')
-    script(type='text/javascript', src='/js/360player.js')
-    script(type='text/javascript', src='/js/excanvas.js')
+
+
 
     meta(name="viewport",content="width=device-width, initial-scale=1")
 
@@ -29,10 +29,18 @@ html
           .album
             .artwork
               img(src='/images/fly-society.svg')
+          .player
+            .controls
+              dl(class="actionButtons")
+                dd
+                  button(class="play")Play
+     
+
           .coming-soon.show-for-medium-up
             .small-artwork 
               img(src='images/fly.png')      
-            .title Forgetting Lost Youth, Coming 2013  
+            .title Forgetting Lost Youth, Coming 2013 
+
 
         .large-5.small-12.columns.tracklist
           div(id='soundcloud-player')
@@ -103,11 +111,10 @@ html
             p Now, Richardson grows up in the first mixtape of his upcoming trilogy.  Michael exquisitely develops rhymes ranging from young, comedic arrogance to the mature, introspective uncertainty of independence.  Having visited Russia, Haiti, Israel, Palestine, Malawi, United Arab Emirates, Canada and Mexico within a 1 year timespan, Mike was both inspired and transformed along his journeys. In this project, F.L.Y. (Forgetting Lost Youth), he explores controversial global issues as he searches to find himself and his calling.  However, as serious as the topics become Mike never fails to maintain his sense of humor and wit.  He consequently wins people of all cultures over with his charm and humility in a project that will excite people of all walks of life.  
 
 footer
-
-  //-.logos
-    ul
-      li    
+  .footer
+    .logos.large-8.small-centered.columns
+      .logo   
         img(src='/images/tha-logo.svg')    
-      li   
+      .logo
         img(src='/images/cs-logo.svg')
 
