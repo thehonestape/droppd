@@ -1,14 +1,10 @@
 !!!5
 html
   head
-    title Fleezus Christ Superstar
+    title Mic Flo - Jettin and Fly Society
     link(rel='stylesheet', href='/stylesheets/normalize.css')
     link(rel='stylesheet', href='/stylesheets/foundation.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/360player.css')
-    link(rel='stylesheet', href='/stylesheets/360player-visualization.css')
- 
-  
     link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
 
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
@@ -17,8 +13,6 @@ html
     script(src='https://w.soundcloud.com/player/api.js')
     script(type='text/javascript', src='/js/soundmanager2.js') 
     script(type='text/javascript', src='/js/what.js')
-
-
 
     meta(name="viewport",content="width=device-width, initial-scale=1")
 
@@ -29,12 +23,6 @@ html
           .album
             .artwork
               img(src='/images/fly-society.svg')
-          .player
-            .controls
-              dl(class="actionButtons")
-                dd
-                  button(class="play")Play
-     
 
           .coming-soon.show-for-medium-up
             .small-artwork 
@@ -43,7 +31,6 @@ html
 
 
         .large-5.small-12.columns.tracklist
-          div(id='soundcloud-player')
           .song
             .name Jettin
             .track
@@ -83,7 +70,12 @@ html
                   .name Chop Steak Remix
                   .producer Produced by 
                     a(href='http://www.twitter.com/chopsteak') Chop Steak
-          button.download Download
+          //-button.download Download
+          iframe(id='soundcloud-widget', 
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/casualsophistication/sets/got_it_for_cheap-july-2013&amp;auto_play=false&amp;auto_advance=true&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=true&amp;show_playcount=true&amp;show_user=true&amp;start_track=0&amp;callback=true",
+            frameborder='no'
+            width=500,
+            height=400)
 
       .row
         .personal
@@ -113,8 +105,19 @@ html
 footer
   .footer
     .logos.large-8.small-centered.columns
-      .logo   
-        img(src='/images/tha-logo.svg')    
       .logo
-        img(src='/images/cs-logo.svg')
+        a(href='http://www.thehonestape.com', target="_blank")   
+          img(src='/images/tha-logo.svg')    
+      .logo
+        a(href='http://www.casualsophistication.org', target='_blank')
+         img(src='/images/cs-logo.svg')
+    .controls
+      button.play
+        i.icon-play     
+        i.icon-pause
+      button.prev
+        i.icon-backward    
+      button.next
+        i.icon-forward
+            
 

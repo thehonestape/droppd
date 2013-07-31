@@ -343,7 +343,13 @@ header {
 .logos {
   display: block;
   margin-top: 8px;
-  width: 100%;
+  float: left;
+  display: inline-block;
+}
+.logos:hover a {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
 }
 .logos .logo {
   display: inline-block;
@@ -355,6 +361,28 @@ header {
   background: #05273a;
   position: fixed;
   bottom: 0;
+}
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+}
+button.play,
+button.next,
+button.prev {
+  background-color: #05273a;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  float: left;
+}
+button.play:hover,
+button.next:hover,
+button.prev:hover {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
 }
 .ui360,.sm2-360ui {
 /* size of the container for the circle, etc. */
