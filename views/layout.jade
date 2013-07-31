@@ -23,6 +23,8 @@ html
           .album
             .artwork
               img(src='/images/fly-society.svg')
+          .player
+            .controls
 
           .coming-soon.show-for-medium-up
             .small-artwork 
@@ -31,6 +33,7 @@ html
 
 
         .large-5.small-12.columns.tracklist
+          div(id='soundcloud-player')
           .song
             .name Jettin
             .track
@@ -70,12 +73,7 @@ html
                   .name Chop Steak Remix
                   .producer Produced by 
                     a(href='http://www.twitter.com/chopsteak') Chop Steak
-          //-button.download Download
-          iframe(id='soundcloud-widget', 
-            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/casualsophistication/sets/got_it_for_cheap-july-2013&amp;auto_play=false&amp;auto_advance=true&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=true&amp;show_playcount=true&amp;show_user=true&amp;start_track=0&amp;callback=true",
-            frameborder='no'
-            width=500,
-            height=400)
+          button.download Download
 
       .row
         .personal
@@ -111,13 +109,4 @@ footer
       .logo
         a(href='http://www.casualsophistication.org', target='_blank')
          img(src='/images/cs-logo.svg')
-    .controls
-      button.play
-        i.icon-play     
-        i.icon-pause
-      button.prev
-        i.icon-backward    
-      button.next
-        i.icon-forward
-            
 
