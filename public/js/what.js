@@ -4,7 +4,8 @@ SC.initialize({
 $(document).ready(function() {
   SC.oEmbed("https://soundcloud.com/casualsophistication/sets/jettin-fly-society-mic-flo", 
   	{color: "05273A", 
-  		show_artwork: "false", 
+  		show_artwork: "false",
+  		show_user: "false", 
   		buying: "false", 
   		show_comments: 'false',
   		default_height: '30px'},  
